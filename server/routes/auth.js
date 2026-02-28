@@ -36,6 +36,10 @@ router.post('/register', async (req, res) => {
                 _id: user._id,
                 name: user.name,
                 email: user.email,
+                profileImage: user.profileImage,
+                education: user.education,
+                skills: user.skills,
+                careerGoals: user.careerGoals,
                 token: generateToken(user._id),
             });
         } else {
@@ -61,6 +65,10 @@ router.post('/login', async (req, res) => {
                 _id: user._id,
                 name: user.name,
                 email: user.email,
+                profileImage: user.profileImage,
+                education: user.education,
+                skills: user.skills,
+                careerGoals: user.careerGoals,
                 token: generateToken(user._id),
             });
         } else {
